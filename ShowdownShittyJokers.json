@@ -1,0 +1,18 @@
+{
+	"id": "shdwn_shitty",
+	"name": "Showdown: Shitty Jokers",
+    "display_name": "Shitty Jokers",
+	"author": ["Mistyk__"],
+	"description": "The shitty extension for the Showdown mod. It adds whatever Showdown can't add because it's too OP or too stupid. Heck, why not both.",
+	"prefix": "shdwn_shitty",
+	"main_file": "main.lua",
+	"priority": 5,
+	"badge_colour": "#4287f5",
+	"badge_text_colour": "#000917",
+	"version": "1.0.0",
+	"dependencies": [
+		"Steamodded (1.0.0~ALPHA-1409a)",
+		"Lovely (>=0.7.1)",
+		"showdown (>=1.2.1)"
+	]
+}

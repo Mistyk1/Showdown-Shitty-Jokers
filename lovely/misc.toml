@@ -1,0 +1,15 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 5
+
+# Init Showdown: Shitty Jokers global through lovely
+[[patches]]
+[patches.pattern]
+target = "main.lua"
+match_indent = true
+pattern = '''function love.load()'''
+position = "before"
+payload = '''
+Showdown_Shitty = {}
+'''
