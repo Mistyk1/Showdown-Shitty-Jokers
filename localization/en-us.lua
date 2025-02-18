@@ -12,6 +12,12 @@ return {
                     '{C:attention}#1#{} times',
                 }
             },
+            j_shdwn_shitty_evil_joker = {
+                name = 'Evil Joker',
+                text = {
+                    '{C:mult}#1#{} Mult',
+                }
+            },
         },
         Other={},
         Planet={},

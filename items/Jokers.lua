@@ -20,11 +20,33 @@ local nice = {
     end
 }
 
+local evil_joker = {
+    type = 'Joker',
+    key = 'evil_joker',
+	atlas = "shdwn_shitty_jokers",
+    pos = coordinate(2),
+    config = {mult = -4},
+    loc_vars = function(self, info_queue, card)
+        return { vars = { card.ability.mult } }
+	end,
+    rarity = 1, cost = 4,
+    blueprint_compat = true, eternal_compat = true, perishable_compat = true,
+    calculate = function(self, card, context)
+        if context.joker_main then
+            return {
+                message = localize{type='variable',key='a_mult_minus',vars={math.abs(card.ability.mult)}},
+                mult_mod = card.ability.mult
+            }
+        end
+    end
+}
+
 return {
 	enabled = Showdown_Shitty.config["Jokers"],
 	list = function ()
 		local list = {
             nice,
+            evil_joker,
 		}
 		return list
 	end,
