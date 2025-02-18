@@ -38,7 +38,7 @@ function shdwn_shitty.save_config(self)
     SMODS.save_mod_config(self)
 end
 
-local showdown_config_tab = function()
+local shdwn_shitty_config_tab = function()
 	return{
 		{
 		label = localize("showdown_content_config"),
@@ -82,5 +82,5 @@ local showdown_config_tab = function()
 	}
 end
 
-shdwn.extra_tabs = showdown_config_tab
-shdwn.config_tab = true
+shdwn_shitty.extra_tabs = shdwn_shitty_config_tab
+shdwn_shitty.config_tab = true
